@@ -12,31 +12,14 @@ $(document).ready(function(){
       var scrolling = $(this).scrollTop()
 
       if (scrolling > 200) {
-          $('.navbar').addClass('primary_color')
           $('.back_to_top').fadeIn(500)
       }
       else{
-          $('.navbar').removeClass('primary_color')
           $('.back_to_top').fadeOut(500)
       }
   });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,14 +49,16 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-ScrollReveal().reveal(".header_container h1", {
+ScrollReveal().reveal(".hero_container h1", {
   ...scrollRevealOption,
 });
-ScrollReveal().reveal(".header_container p", {
+
+ScrollReveal().reveal(".hero_container p", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".header_container form", {
+
+ScrollReveal().reveal(".hero_container form", {
   ...scrollRevealOption,
   delay: 1000,
 });
@@ -100,3 +85,5 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+

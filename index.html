@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css"> 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- CSS LINK END -->
 </head>
 <body>
@@ -21,32 +22,48 @@
 
 
     <!-- BACK TO TOP BTN AREA -->
-    <button class="back_to_top btn btn-primary">
+    <button class="back_to_top btn-primary">
         <i class="fa-solid fa-angles-up"></i>
     </button> 
     <!-- BACK TO TOP BTN AREA END -->
 
 
     <!-- MENU AREA -->
-    <header class="header">
-        <a href="#" class="logo">Travel<span>Dream</span></a>
+    <nav>
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href="#" class="logo">Travel<span>Dream</span></a>
+            </div>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class="fa-solid fa-bars-staggered" id="bar_icon"></i>
-            <i class="fa-solid fa-x" id="close_icon"></i>
-        </label>
+            <div class="nav_menu_btn" id="menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
 
-        <nav class="navbar">
-            <a href="#home" style="--i:0">Home</a>
-            <a href="#service" style="--i:1">Services</a>
-            <a href="#destination" style="--i:2">Destinations</a>
-            <a href="#package" style="--i:3">Packages</a>
-            <a href="#client" style="--i:4">Clients</a>
-        </nav>
-    </header> 
+        <ul class="nav_links" id="nav-links">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#service">Services</a>
+            </li>
+
+            <li>
+                <a href="#destination">Destinations</a>
+            </li>
+
+            <li>
+                <a href="#package">Packages</a>
+            </li>
+
+            <li>
+                <a href="#client">Clients</a>
+            </li>
+        </ul>
+    </nav> 
     <!-- MENU AREA END -->
-    
+
 
     <!-- HERO AREA -->
     <section class="hero" id="home">
@@ -61,7 +78,7 @@
                 </div>
 
                 <div class="input_group">
-                    <span><i class="fa-solid fa-location-dot" style='color:#ffffff'></i></i></span>
+                    <span><i class="fa-solid fa-location-dot" style='color:#ffffff'></i></span>
                     <input type="text" placeholder="Location">
                 </div>
 
@@ -224,16 +241,16 @@
         <p class="section_description">
             We have many happy customers who booked holidays with us.
         </p>
-
+    
         <!-- === slider area === -->
         <div class="swiper">
-
+    
             <!-- === Additional required wrapper === -->
-
+    
             <div class="swiper-wrapper">
-
+    
                 <!-- === Slides === -->
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-1.jpg" alt="client">
@@ -246,7 +263,7 @@
                         <h5>Software Engineer</h5>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-2.jpg" alt="client">
@@ -259,7 +276,7 @@
                         <h5>Marketing Manager</h5>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-3.jpg" alt="client">
@@ -271,7 +288,7 @@
                         <h5>Financial Analyst</h5>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-4.jpg" alt="client">
@@ -284,7 +301,7 @@
                         <h5>Event Planner</h5>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-5.jpg" alt="client">
@@ -297,7 +314,7 @@
                         <h5>Photographer</h5>
                     </div>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="client_card">
                         <img src="assets/image/client-6.jpg" alt="client">
@@ -311,10 +328,10 @@
                     </div>
                 </div>
             </div> 
-
+    
             <div class="swiper-pagination"></div>
         </div> 
-    </section> 
+    </section>  
     <!-- CLIENT AREA END -->
 
 
@@ -468,6 +485,7 @@
     <!-- JS LINK END -->
 </body>
 </html>
+
 
 
 
